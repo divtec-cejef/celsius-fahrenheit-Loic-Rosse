@@ -8,9 +8,9 @@
 (function main() {
   'use strict'; // Demande un interprétation stricte du code
 
-  let temperature = prompt('Entrez une température');
+  let temperature = Number(prompt('Entrez une température'));
 
-  if (temperature.isNaN){
+  if (isNaN(temperature)){
     alert('Veuillez entrer un nombre');
   }else {
     alert(`la température est de : ${temperature = temperature * 9 / 5 + 32}`);
