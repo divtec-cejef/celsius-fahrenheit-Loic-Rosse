@@ -8,8 +8,14 @@
 (function main() {
   'use strict'; // Demande un interprétation stricte du code
 
-  let a = 'Bonjour';
+  let temperature = prompt('Entrez une température');
 
-  console.log(a);
+  if (temperature.isNaN){
+    alert('Veuillez entrer un nombre');
+  }else {
+    alert(`la température est de : ${temperature = temperature * 9 / 5 + 32}`);
+  }
+
+
 }()); // Main IIFE
 
